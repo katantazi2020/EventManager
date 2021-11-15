@@ -37,6 +37,7 @@ namespace EventManager
             this.City = theother.City;
 
         }
+        # region PROPERTIES
         public string Street
         {
             get { return street; }
@@ -61,6 +62,7 @@ namespace EventManager
             get { return Country; }
             set { Country = value; }
         }
+        #endregion
         public bool validate()
         {
             bool cityok = !string.IsNullOrEmpty(City);
